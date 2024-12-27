@@ -12,19 +12,23 @@ set psmpath = $psmpath G:/Dev/Hardware/Allegro_LIB/pcblib G:/Dev/Hardware/Allegr
 set padpath = $padpath G:/Dev/Hardware/Allegro_LIB/pcblib G:/Dev/Hardware/Allegro_LIB/via G:/Dev/Hardware/AllegroLib/FootPrint
 set devpath = $devpath G:/Dev/Hardware/Allegro_LIB/pcblib G:/Dev/Hardware/Allegro_LIB/via G:/Dev/Hardware/AllegroLib/FootPrint
 
-funckey a move
-funckey s slide
-funckey ww add connect
-funckey e next
-funckey q oops
-funckey d done
-funckey t add text
-funckey gg define grid
-funckey u status
-funckey f pop mirror
-funckey ' ' iangle 45
+funckey a "move"
+funckey s "slide"
+funckey ww "add connect"
+funckey e "next"
+funckey q "oops"
+funckey d "done"
+funckey t "add text"
+funckey gg "define grid"
+funckey u "status"
+funckey f "pop mirror"
+funckey ' ' "iangle 45"
 
 # SKILL scripts
+
+# align
+funckey x "aln"
+
 # Toggle visibility for Etch layers
 funckey 1 "toggle_number_visible 1"
 funckey 2 "toggle_number_visible 2"
@@ -42,6 +46,7 @@ funckey ~3 "toggle_number_visible 13"
 funckey ~4 "toggle_number_visible 14"
 funckey ~5 "toggle_number_visible 15"
 funckey ~6 "toggle_number_visible 16"
+
 # Toggle all Conductor and Plane Etch layers
 funckey ]  toggle_conductor_layers
 funckey ~] toggle_conductor_layers

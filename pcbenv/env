@@ -1,0 +1,51 @@
+source $TELENV
+
+### User Preferences section
+### This section is computer generated.
+### Please do not modify to the end of the file.
+### Place your hand edits above this section.
+###
+set hide_unified_filter_dialog
+set ads_sdart = GERBER
+set steppath = $steppath G:/Dev/Hardware/Allegro_LIB/step G:/Dev/Hardware/AllegroLib/3D
+set psmpath = $psmpath G:/Dev/Hardware/Allegro_LIB/pcblib G:/Dev/Hardware/Allegro_LIB/via G:/Dev/Hardware/AllegroLib/FootPrint
+set padpath = $padpath G:/Dev/Hardware/Allegro_LIB/pcblib G:/Dev/Hardware/Allegro_LIB/via G:/Dev/Hardware/AllegroLib/FootPrint
+set devpath = $devpath G:/Dev/Hardware/Allegro_LIB/pcblib G:/Dev/Hardware/Allegro_LIB/via G:/Dev/Hardware/AllegroLib/FootPrint
+
+funckey a move
+funckey s slide
+funckey ww add connect
+funckey e next
+funckey q oops
+funckey d done
+funckey t add text
+funckey gg define grid
+funckey u status
+funckey f pop mirror
+funckey ' ' iangle 45
+
+# SKILL scripts
+# Toggle visibility for Etch layers
+funckey 1 "toggle_number_visible 1"
+funckey 2 "toggle_number_visible 2"
+funckey 3 "toggle_number_visible 3"
+funckey 4 "toggle_number_visible 4"
+funckey 5 "toggle_number_visible 5"
+funckey 6 "toggle_number_visible 6"
+funckey 7 "toggle_number_visible 7"
+funckey 8 "toggle_number_visible 8"
+funckey 9 "toggle_number_visible 9"
+funckey 0 "toggle_number_visible 10"
+funckey ~1 "toggle_number_visible 11"
+funckey ~2 "toggle_number_visible 12"
+funckey ~3 "toggle_number_visible 13"
+funckey ~4 "toggle_number_visible 14"
+funckey ~5 "toggle_number_visible 15"
+funckey ~6 "toggle_number_visible 16"
+# Toggle all Conductor and Plane Etch layers
+funckey ]  toggle_conductor_layers
+funckey ~] toggle_conductor_layers
+funckey \  toggle_plane_layers
+funckey ~\ toggle_plane_layers
+funckey [  toggle_layers
+funckey ~[ toggle_layers

@@ -1,0 +1,8 @@
+(unless (boundp 'ShowSkillFiles)
+  ShowSkillFiles = axlGetVariable("ShowSkillFiles"))
+
+(let ((pathToSkillDir "./skill/"))  ;; relative path from current 'pcbenv' directory
+  (foreach file (rexMatchList "\\.il$" (getDirFiles pathToSkillDir))
+           (when ShowSkillFiles
+             (printf "fname: %s\n" file))
+           (load strcat(pathToSkillDir file))))
